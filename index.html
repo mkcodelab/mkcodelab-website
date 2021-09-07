@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>MKCodelab</title>
+</head>
+<body>
+  
+  
+  <main>
+    <section class="section section-1">
+      <h1 class="section-header welcome">Witaj na <span>MKCodelab</span></h1>
+      <p>Nazywam się Michał Kulawik i zajmuję się szeroko pojętym front-endem. Znajdziesz tutaj moje projekty.</p>
+      <a href="#projects" class="down"></a>
+    </section>
+  
+    <section class="section section-2">
+      <a href="#" id="projects"></a>
+      <h1 class="h1-projects">Projekty</h1>
+      <div class="project-slider-box">
+
+        <div class="project-slider" id="project-slider"></div>
+
+        <nav class="project-nav">
+          <button class="down" id="projLeft"><<</button>
+          <button class="down" id="projRight">>></button>
+        </nav>
+
+      </div>
+  
+    </section>
+
+    <section class="section section-3">
+      <h1>Kontakt</h1>
+      <a href="#">LinkedIn</a>
+      <a href="#">Github</a>
+      <p class="mail">michal.kulawik@gmail.com</p>
+      
+    </section>
+
+  </main>
+  <div id="mouseRadius"></div>
+  <canvas class="canvas"></canvas>
+  <script src="script.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
