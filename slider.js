@@ -31,6 +31,13 @@ const projects = [
     img: 'img/backgroundgen.png',
     alt: 'backgroundgen.png'
 
+  },
+  {
+    name: 'Artifact Creator',
+    descr: 'Stwórz swój własny artefakt',
+    link: 'https://mkcodelab.github.io/Artifact-Creator/',
+    img: 'img/artifact-creator.png',
+    alt: 'artifact-creator.png'
   }
 ]
 
