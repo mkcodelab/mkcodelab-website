@@ -3,9 +3,20 @@ const ctx = canvas.getContext('2d');
 let CW, CH;
 let rainQuantity = window.innerWidth;
 const circleArray = [];
+const mouse = {
+  x: null,
+  y: null,
+  size: 50,
+  
+}
+
 function resize() {
   CW = canvas.width = rainQuantity = window.innerWidth;
-  CH = canvas.height = window.innerHeight
+  CH = canvas.height = window.innerHeight;
+  if (CW <= 500) {
+    mouse.size = 1;
+    console.log('mouse size decreased')
+  } else mouse.size = 50;
   
 }
 resize();
@@ -14,20 +25,14 @@ addEventListener('resize', ()=> {
   resize();
   populate(rainQuantity);
 });
-const mouse = {
-  x: null,
-  y: null,
-  size: 50,
-}
-// const mouseRadius = document.querySelector('#mouseRadius');
-// mouseRadius.style.width = mouse.size*2 + 'px';
-// mouseRadius.style.height = mouse.size*2 + 'px';
+
+
+
 
 addEventListener('mousemove', e => {
   mouse.x = e.x;
   mouse.y = e.y;
-  // mouseRadius.style.top = e.y + 'px';
-  // mouseRadius.style.left = e.x + 'px';
+
   
 })
 

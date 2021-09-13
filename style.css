@@ -111,6 +111,7 @@ canvas {
 }
 
 .down {
+  display: block;
   width: 2.5rem;
   height: 2.5rem;
   color: limegreen;
@@ -125,6 +126,17 @@ canvas {
 
 .down:hover {
   transform: translateY(5px);
+}
+
+.contact-link {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-link:hover {
+  transform: translate(-50%, 5px);
 }
 
 .section-1 {
@@ -167,6 +179,7 @@ canvas {
 .section-2 {
   background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
   backdrop-filter: blur(2px) hue-rotate(100deg);
+  position: relative;
 }
 
 .h1-projects {
